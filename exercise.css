@@ -5,20 +5,21 @@
 }
 .clearfix::after{
     content: "";
-    display: inline-block;
+    display: block;
     clear: both;
 }
-.text-list{
+.list{
     margin: 50px;
 }
-.text{
+.list-item{
     margin: 0 auto;
+    list-style: none;
     width: 960px;
-    text-align: left;
+    /* text-align: left; */
     padding: 20px;
 }
-.text:nth-child(odd){
-    background-color:  lightgray;
+.list-item:nth-child(odd){
+    background-color:  rgb(240, 240, 240);
 }
 .cube-list{
     width: 960px;
@@ -27,44 +28,16 @@
 .cube{
     width: 30%;
     height: 200px;
-    border: 1px solid black;
     margin-bottom: 40px;
+    margin-right: 5%;
     float: left;
+    background-color: gold;
 }
-.cube:nth-child(1){
-    margin-right: 5%;
-    background-color: orange;
-}
-.cube:nth-child(2){
-    margin-right: 5%;
-    background-color: yellow;
-}
-.cube:nth-child(3){
-    margin-bottom: 40px;
-    background-color: yellow;
-}
-.cube:nth-child(4){
-    margin-right: 5%;
-    background-color: yellow;
-}
+.cube:first-child,
+.cube:last-child,
 .cube:nth-child(5){
-    margin-right: 5%;
-    background-color: orange;
+    background-color: darkorange;
 }
-.cube:nth-child(6){
-    margin-bottom: 40px;
-    background-color: yellow;
-}
-.cube:nth-child(7){
-    margin-right: 5%;
-    background-color: yellow;
-
-}
-.cube:nth-child(8){
-    margin-right: 5%;
-    background-color: yellow;
-}
-.cube:nth-child(9){
-    margin-bottom: 40px;
-    background-color: orange;
+.cube:nth-child(3n){
+    margin-right: 0;
 }
